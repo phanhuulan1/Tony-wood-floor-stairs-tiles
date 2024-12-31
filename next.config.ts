@@ -1,7 +1,13 @@
-import type { NextConfig } from "next";
+// config default
+// import type { NextConfig } from "next";
+// const nextConfig: NextConfig = {};
+// export default nextConfig;
 
-const nextConfig: NextConfig = {
-  /* config options here */
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  devIndicators: {
+    appIsrStatus: false,
+  },
 };
 
 export default nextConfig;
