@@ -1,3 +1,4 @@
+import Banner from "@/components/Banner";
 import Footer from "@/components/Footer";
 import Installation from "@/components/Installation";
 import WhyUsComponent from "@/components/WhyUs";
@@ -5,6 +6,7 @@ import WhyUsComponent from "@/components/WhyUs";
 export default function Home() {
   return (
     <main>
+      <Banner />
       <Installation />
       <WhyUsComponent />
       <Footer />
