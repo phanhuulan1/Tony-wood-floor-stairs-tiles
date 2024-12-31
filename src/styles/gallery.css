@@ -1,0 +1,24 @@
+#gallery-page {
+  background-color: var(--deep-black);
+}
+
+#gallery-page .section-title {
+  margin-top: 64px;
+  margin-bottom: 16px;
+  font-family: "Cardo";
+  color: var(--blush-white);
+  font-size: var(--font-32);
+  font-weight: 400;
+  text-align: left;
+}
+
+#gallery-page .section-sub-title {
+  font-family: "Libre Franklin";
+  color: var(--white);
+  font-size: var(--font-16);
+  font-weight: 400;
+}
+
+#gallery-page .section-sub-title.top {
+  margin-bottom: 12px;
+}
