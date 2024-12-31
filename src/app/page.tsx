@@ -6,7 +6,7 @@ import WhyUsComponent from "@/components/WhyUs";
 
 export default function Home() {
   return (
-    <main>
+    <main id="home-page">
       <Header />
       <Banner />
       <Installation />
