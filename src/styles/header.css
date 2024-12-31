@@ -1,0 +1,110 @@
+.header-section {
+  text-align: center;
+}
+
+.header-section .header-top {
+  display: flex;
+  align-items: center;
+}
+
+.header-section .instagram-icon {
+  margin-left: 20px;
+  max-width: 50px;
+}
+
+.header-section .instagram-icon>i {
+  font-size: var(--font-24);
+}
+
+.header-section .header-logo {
+  flex: 1;
+}
+
+.header-section .the-cut-logo {
+  width: 184px;
+  height: 128px;
+}
+
+.header-section .header-menu {
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+.header-section .header-menu-item {
+  margin-right: 24px;
+  margin-bottom: 8px;
+}
+
+.header-section .header-menu-item.is-active {
+  border-bottom: 2px solid var(--white);
+}
+
+.header-section .header-menu-link {
+  padding: 4px;
+  color: var(--white);
+  font-family: "Libre Franklin";
+  font-size: var(--font-18);
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.header-section .divider-line {
+  height: 1px;
+  background-color: var(--whisper-white);
+}
+
+/* ============= start menu mobile ======== */
+.header-section .header-menu-mobile {
+  position: relative;
+}
+
+.header-section .header-menu-mobile .the-cut-logo {
+  width: 68px;
+  height: 48px;
+}
+
+.header-section .header-menu-mobile .header-menu {
+  position: absolute;
+  top: 86px;
+  left: 20px;
+  margin: 0 auto;
+  width: calc(100% - 40px);
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 10;
+  background-color: var(--deep-black);
+}
+
+.header-section .header-menu-mobile .menu-mobile-top {
+  margin: 0 20px;
+  min-height: 88px;
+  display: flex;
+  align-items: center;
+}
+
+.header-section .header-menu-mobile .wrapper-hamburger-icon {
+  cursor: pointer;
+}
+
+.header-section .header-menu-mobile .close-icon,
+.header-section .header-menu-mobile .hamburger-icon {
+  font-size: 24px;
+}
+
+.header-section .header-menu-mobile .header-menu-item {
+  margin-left: 8px;
+  margin-bottom: 20px;
+}
+
+.header-section .header-menu-mobile .menu-mobile {
+  display: none;
+}
+
+.header-section .header-menu-mobile .menu-mobile.menu-mobile-open {
+  display: flex;
+}
+
+.header-menu-mobile {
+  display: none;
+}
