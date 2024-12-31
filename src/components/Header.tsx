@@ -33,11 +33,11 @@ const Header = () => {
         <ul className="header-menu">
           <li className="header-menu-item is-active">
             <Link className="header-menu-link" href="/">
-              Home
+              Home 
             </Link>
           </li>
           <li className="header-menu-item">
-            <Link className="header-menu-link" href="/service">
+            <Link className="header-menu-link" href="/services">
               Services
             </Link>
           </li>
