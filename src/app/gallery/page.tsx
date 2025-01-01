@@ -21,88 +21,64 @@ const GalleryPage = () => {
       });
     }
   }, []);
-  
+
   return (
     <main id="gallery-page">
       <Header />
-      <section className="section installation-section">
+      <section className="section gallery-section">
         <div className="container">
           <h1 className="section-title">Gallery</h1>
           <p className="section-sub-title top">Our latest and best photos</p>
           <p className="section-sub-title">
             We love to take pictures and show them to the world.
           </p>
-          <div id="gallery-of-page" className="row installation-list">
+          <div id="gallery-of-page" className="row gallery-list">
             <a
               href={GalleryImg1.src}
-              className="gallery-item col-4 col-small-6 installation-item"
+              className="col-4 col-small-6 gallery-item"
             >
-              <div className="wrapper-img">
-                <img
-                  className="installation-img"
-                  src={GalleryImg1.src}
-                  alt="Flooring"
-                />
+              <div className="gallery-wrapper-img">
+                <img className="gallery-img" src={GalleryImg1.src} alt="" />
               </div>
             </a>
             <a
               href={GalleryImg2.src}
-              className="gallery-item col-4 col-small-6 installation-item"
+              className="col-4 col-small-6 gallery-item"
             >
-              <div className="wrapper-img">
-                <img
-                  className="installation-img"
-                  src={GalleryImg2.src}
-                  alt="Hardwood"
-                />
+              <div className="gallery-wrapper-img">
+                <img className="gallery-img" src={GalleryImg2.src} alt="" />
               </div>
             </a>
             <a
               href={GalleryImg3.src}
-              className="gallery-item col-4 col-small-6 installation-item"
+              className="col-4 col-small-6 gallery-item"
             >
-              <div className="wrapper-img">
-                <img
-                  className="installation-img"
-                  src={GalleryImg3.src}
-                  alt="Engineered"
-                />
+              <div className="gallery-wrapper-img">
+                <img className="gallery-img" src={GalleryImg3.src} alt="" />
               </div>
             </a>
             <a
               href={GalleryImg4.src}
-              className="gallery-item col-4 col-small-6 installation-item"
+              className="col-4 col-small-6 gallery-item"
             >
-              <div className="wrapper-img">
-                <img
-                  className="installation-img"
-                  src={GalleryImg4.src}
-                  alt="Laminate"
-                />
+              <div className="gallery-wrapper-img">
+                <img className="gallery-img" src={GalleryImg4.src} alt="" />
               </div>
             </a>
             <a
               href={GalleryImg5.src}
-              className="gallery-item col-4 col-small-6 installation-item"
+              className="col-4 col-small-6 gallery-item"
             >
-              <div className="wrapper-img">
-                <img
-                  className="installation-img"
-                  src={GalleryImg5.src}
-                  alt="CapetTile"
-                />
+              <div className="gallery-wrapper-img">
+                <img className="gallery-img" src={GalleryImg5.src} alt="" />
               </div>
             </a>
             <a
               href={GalleryImg6.src}
-              className="gallery-item col-4 col-small-6 installation-item"
+              className="col-4 col-small-6 gallery-item"
             >
-              <div className="wrapper-img">
-                <img
-                  className="installation-img"
-                  src={GalleryImg6.src}
-                  alt="Stairs"
-                />
+              <div className="gallery-wrapper-img">
+                <img className="gallery-img" src={GalleryImg6.src} alt="" />
               </div>
             </a>
           </div>
