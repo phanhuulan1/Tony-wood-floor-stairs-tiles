@@ -2,6 +2,10 @@
   background-color: var(--deep-black);
 }
 
+#gallery-page .gallery-section {
+  padding-bottom: 80px;
+}
+
 #gallery-page .section-title {
   padding-top: 64px;
   margin-bottom: 16px;
