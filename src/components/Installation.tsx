@@ -17,12 +17,22 @@ import Vinyl from "../assets/images/vinyl.jpeg";
 const Installation = () => {
   useEffect(() => {
     const galleryElement = document.getElementById("gallery");
+
+    // Backup original console.log
+    const originalConsoleLog = console.log;
+
+    // Disable console.log
+    console.log = () => {};
+
     if (galleryElement) {
       lightGallery(galleryElement, {
         plugins: [],
         speed: 500,
       });
     }
+
+    // Restore original console.log after lightGallery initialization
+    console.log = originalConsoleLog;
   }, []);
 
   return (
