@@ -2,8 +2,6 @@
 import { useEffect } from "react";
 import lightGallery from "lightgallery";
 import "lightgallery/css/lightgallery.css";
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
 import GalleryImg1 from "../../assets/images/gallery-1.jpeg";
 import GalleryImg2 from "../../assets/images/gallery-2.png";
 import GalleryImg3 from "../../assets/images/gallery-3.jpeg";
@@ -24,7 +22,6 @@ const GalleryPage = () => {
 
   return (
     <main id="gallery-page">
-      <Header />
       <section className="section gallery-section">
         <div className="container">
           <h1 className="section-title">Gallery</h1>
@@ -84,7 +81,6 @@ const GalleryPage = () => {
           </div>
         </div>
       </section>
-      <Footer />
     </main>
   );
 };

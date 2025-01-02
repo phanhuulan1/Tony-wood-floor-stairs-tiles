@@ -7,11 +7,9 @@ import WhyUsComponent from "@/components/WhyUs";
 export default function Home() {
   return (
     <main id="home-page">
-      <Header />
       <Banner />
       <Installation />
       <WhyUsComponent />
-      <Footer />
     </main>
   );
 }

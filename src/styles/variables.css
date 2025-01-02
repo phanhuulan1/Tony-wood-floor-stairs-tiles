@@ -23,3 +23,7 @@
 #home-page {
   background-color: var(--deep-black);
 }
+
+header {
+  background-color: var(--deep-black);
+}

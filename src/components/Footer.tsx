@@ -1,7 +1,38 @@
+"use client";
 import Link from "next/link";
 import TheCutFlooringLogo from "../assets/images/the-cut-flooring-logo.png";
+import { useState } from "react";
 
 const Footer = () => {
+  const [active, setActive] = useState(location.pathname);
+
+  const Menus = [
+    {
+      name: "Home",
+      link: "/",
+    },
+    {
+      name: "Services",
+      link: "/services",
+    },
+    {
+      name: "About",
+      link: "/about",
+    },
+    {
+      name: "Gallery",
+      link: "/gallery",
+    },
+    {
+      name: "Location",
+      link: "/location",
+    },
+    {
+      name: "Contact us",
+      link: "/contact-us",
+    },
+  ];
+
   return (
     <footer className="section footer-section">
       <div className="container">
@@ -19,36 +50,13 @@ const Footer = () => {
         </div>
         <div className="wrapper-footer-menu">
           <ul className="footer-menu">
-            <li className="footer-menu-item">
-              <Link className="footer-menu-link" href="">
-                Home
-              </Link>
-            </li>
-            <li className="footer-menu-item">
-              <Link className="footer-menu-link" href="">
-                Services
-              </Link>
-            </li>
-            <li className="footer-menu-item">
-              <Link className="footer-menu-link" href="">
-                About
-              </Link>
-            </li>
-            <li className="footer-menu-item">
-              <Link className="footer-menu-link" href="">
-                Gallery
-              </Link>
-            </li>
-            <li className="footer-menu-item">
-              <Link className="footer-menu-link" href="">
-                Location
-              </Link>
-            </li>
-            <li className="footer-menu-item">
-              <Link className="footer-menu-link" href="">
-                Contact us
-              </Link>
-            </li>
+            {Menus.map((menu, index) => (
+              <li key={index} className="footer-menu-item">
+                <Link href={menu.link} onClick={() => setActive(menu.link)}>
+                  <span className="footer-menu-link">{menu.name}</span>
+                </Link>
+              </li>
+            ))}
           </ul>
           <div className="footer-instagram">
             <div className="wrapper-instagram">

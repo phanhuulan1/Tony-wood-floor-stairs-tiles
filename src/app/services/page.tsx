@@ -1,13 +1,10 @@
 import Link from "next/link";
 import ServicesFlooringInstallations from "../../assets/images/services-flooring-installations.png";
 import ServicesStairsInstallations from "../../assets/images/services-stairs-installations.png";
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
 
 const ServicesPage = () => {
   return (
     <main id="services-page">
-      <Header />
       <section className="section floor-section">
         <div className="container">
           <div className="floor-item-img">
@@ -65,7 +62,6 @@ const ServicesPage = () => {
           </ul>
         </div>
       </section>
-      <Footer />
     </main>
   );
 };

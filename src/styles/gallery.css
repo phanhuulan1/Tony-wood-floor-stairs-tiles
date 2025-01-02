@@ -3,7 +3,7 @@
 }
 
 #gallery-page .section-title {
-  margin-top: 64px;
+  padding-top: 64px;
   margin-bottom: 16px;
   font-family: "Cardo";
   color: var(--blush-white);

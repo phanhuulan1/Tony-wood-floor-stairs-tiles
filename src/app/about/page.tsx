@@ -1,12 +1,9 @@
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
 import Link from "next/link";
 import AboutBannerBg from "../../assets/images/about-banner-bg.jpeg";
 
 const AboutPage = () => {
   return (
     <main id="about-page">
-      <Header />
       <section className="section banner-section">
         <div className="banner-wrapper">
           <img
@@ -100,7 +97,6 @@ const AboutPage = () => {
           </ul>
         </div>
       </section>
-      <Footer />
     </main>
   );
 };

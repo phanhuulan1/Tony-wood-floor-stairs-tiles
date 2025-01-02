@@ -1,11 +1,8 @@
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
 import LocationMapsImg from "../../assets/images/location-maps-img.jpg";
 
 const LocationPage = () => {
   return (
     <main id="location-page">
-      <Header />
       <section className="section location-section">
         <div className="container">
           <div className="row">
@@ -60,7 +57,6 @@ const LocationPage = () => {
           </div>
         </div>
       </section>
-      <Footer />
     </main>
   );
 };
