@@ -2,7 +2,9 @@
   display: flex;
   background-color: var(--deep-black);
 }
+
 .stairs-section {
+  padding: 30px 0 80px;
   background-color: var(--deep-black);
 }
 

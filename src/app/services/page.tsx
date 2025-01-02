@@ -7,26 +7,28 @@ const ServicesPage = () => {
     <main id="services-page">
       <section className="section floor-section">
         <div className="container">
-          <div className="floor-item-img">
-            <img
-              className="floor-img"
-              src={ServicesFlooringInstallations.src}
-              alt="Flooring Installations"
-            />
-          </div>
-          <div className="floor-item-content">
-            <div className="floor-wrapper">
-              <p className="floor-title">Flooring Installations</p>
-              <p className="floor-desc">
-                Add a description Flooring Installation We offer a wide array of
-                residential and commercial flooring installation and sales
-                services at affordable rates. Laminate Hardwood Engineered
-                Hardwood Floor Vinyl Composite Tile (VCT) & Vinyl Click Tile
-                Carpet & Carpet Tile Tile Floor Installation Much more!n here.
-              </p>
-              <Link className="floor-link" href="/about">
-                Read more
-              </Link>
+          <div className="row">
+            <div className="col-7 col-medium-12">
+              <img
+                className="floor-img"
+                src={ServicesFlooringInstallations.src}
+                alt="Flooring Installations"
+              />
+            </div>
+            <div className="col-5 col-medium-12 floor-item-content">
+              <div className="floor-wrapper">
+                <p className="floor-title">Flooring Installations</p>
+                <p className="floor-desc">
+                  Add a description Flooring Installation We offer a wide array
+                  of residential and commercial flooring installation and sales
+                  services at affordable rates. Laminate Hardwood Engineered
+                  Hardwood Floor Vinyl Composite Tile (VCT) & Vinyl Click Tile
+                  Carpet & Carpet Tile Tile Floor Installation Much more!n here.
+                </p>
+                <Link className="floor-link" href="/about">
+                  Read more
+                </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -34,7 +36,7 @@ const ServicesPage = () => {
       <section className="section stairs-section">
         <div className="container">
           <ul className="row stairs-list">
-            <li className="col-6 col-small-6 stairs-item">
+            <li className="col-6 col-medium-12 stairs-item">
               <div className="stairs-wrapper">
                 <img
                   className="stairs-img"
@@ -43,7 +45,7 @@ const ServicesPage = () => {
                 />
               </div>
             </li>
-            <li className="col-6 col-small-6 stairs-item">
+            <li className="col-6 col-medium-12 stairs-item">
               <div className="stairs-wrapper">
                 <p className="stairs-title">Stairs Installations</p>
                 <p className="stairs-desc">
