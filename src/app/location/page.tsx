@@ -1,11 +1,9 @@
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
+import Link from "next/link";
 import LocationMapsImg from "../../assets/images/location-maps-img.jpg";
 
 const LocationPage = () => {
   return (
     <main id="location-page">
-      <Header />
       <section className="section location-section">
         <div className="container">
           <div className="row">
@@ -44,13 +42,18 @@ const LocationPage = () => {
                     <div className="location-contact">
                       <div className="location-phone">
                         <h4 className="location-title">Phone</h4>
-                        <p className="location-sub-title">6472963377</p>
+                        <p className="location-sub-title">
+                          <Link href="tel:6472963377">6472963377</Link>
+                        </p>
                       </div>
                       <div className="location-email">
                         <h4 className="location-title">Email</h4>
-                        <a href="" className="location-sub-title email-link">
+                        <Link
+                          href="mailto:Thecutflooring@gmail.com"
+                          className="location-sub-title email-link"
+                        >
                           Thecutflooring@gmail.com
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -60,7 +63,6 @@ const LocationPage = () => {
           </div>
         </div>
       </section>
-      <Footer />
     </main>
   );
 };

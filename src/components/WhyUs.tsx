@@ -16,7 +16,7 @@ const WhyUsComponent = () => {
                 We offer affordable rates while maintaining top notch quality of
                 work we perform for all of our clients.
               </p>
-              <Link className="card-link" href="">
+              <Link className="card-link" href="/contact-us">
                 REQUEST QUOTE
               </Link>
             </div>
@@ -28,7 +28,7 @@ const WhyUsComponent = () => {
                 We use proper equipment and our staff is clean, accurate and
                 precise with their work. We also wear all required PPE.
               </p>
-              <Link className="card-link" href="">
+              <Link className="card-link" href="/gallery">
                 GALLERY
               </Link>
             </div>
@@ -43,7 +43,7 @@ const WhyUsComponent = () => {
                 on all jobs, as well as contactless payment options with online
                 billing.
               </p>
-              <Link className="card-link" href="">
+              <Link className="card-link" href="/about">
                 MORE INFO
               </Link>
             </div>

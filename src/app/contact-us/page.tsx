@@ -1,8 +1,6 @@
 "use client";
 import React from "react";
 import { useForm } from "react-hook-form";
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
 
 const ContactUsPage = () => {
   const {
@@ -17,7 +15,6 @@ const ContactUsPage = () => {
 
   return (
     <main id="contact-us-page">
-      <Header />
       <section className="section contact-section">
         <div className="container">
           <h1 className="section-title">Contact Us</h1>
@@ -135,7 +132,6 @@ const ContactUsPage = () => {
           </form>
         </div>
       </section>
-      <Footer />
     </main>
   );
 };
