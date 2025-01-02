@@ -26,6 +26,10 @@
   text-align: center;
 }
 
+.why-us-section .card-title.under-line {
+  text-decoration: underline;
+}
+
 .why-us-section .card-sub-title {
   margin-bottom: 12px;
   color: var(--cloud-white);

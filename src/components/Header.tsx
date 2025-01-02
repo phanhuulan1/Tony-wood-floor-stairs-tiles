@@ -1,11 +1,13 @@
 "use client";
-import TheCutFlooringLogo from "../assets/images/the-cut-flooring-logo.png";
+import React, { useCallback, useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
-import React, { useCallback, useState } from "react";
+import TheCutFlooringLogo from "../assets/images/the-cut-flooring-logo.png";
 
-const Header = (props: any) => {
-  const [active, setActive] = useState(location.pathname);
+const Header = () => {
+  const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
+  const [active, setActive] = useState(pathname);
 
   const Menus = [
     {
@@ -38,13 +40,20 @@ const Header = (props: any) => {
     setIsOpen(!isOpen);
   }, [isOpen]);
 
+  useEffect(() => {
+    setActive(pathname);
+  }, [pathname]);
+
   return (
     <header className="section header-section">
       <div className="header-menu-desktop">
         <div className="header-top">
-          <div className="instagram-icon">
+          <Link
+            className="instagram-icon"
+            href="https://instagram.com/thecutflooring?utm_medium=copy_link"
+          >
             <i className="fa-brands fa-instagram"></i>
-          </div>
+          </Link>
           <div className="header-logo">
             <Link className="header-link" href="/">
               <div className="wrapper-logo">

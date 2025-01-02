@@ -1,11 +1,8 @@
 "use client";
 import Link from "next/link";
 import TheCutFlooringLogo from "../assets/images/the-cut-flooring-logo.png";
-import { useState } from "react";
 
 const Footer = () => {
-  const [active, setActive] = useState(location.pathname);
-
   const Menus = [
     {
       name: "Home",
@@ -52,16 +49,19 @@ const Footer = () => {
           <ul className="footer-menu">
             {Menus.map((menu, index) => (
               <li key={index} className="footer-menu-item">
-                <Link href={menu.link} onClick={() => setActive(menu.link)}>
+                <Link href={menu.link}>
                   <span className="footer-menu-link">{menu.name}</span>
                 </Link>
               </li>
             ))}
           </ul>
           <div className="footer-instagram">
-            <div className="wrapper-instagram">
+            <Link
+              className="wrapper-instagram"
+              href="https://instagram.com/thecutflooring?utm_medium=copy_link"
+            >
               <i className="fa-brands fa-instagram"></i>
-            </div>
+            </Link>
           </div>
         </div>
         <div className="divider-line" />
@@ -74,10 +74,12 @@ const Footer = () => {
                 2L1, Canada,
               </p>
               <p className="footer-contact">
-                <Link href="">6472963377</Link>
+                <Link href="tel:6472963377">6472963377</Link>
               </p>
               <p className="footer-contact">
-                <Link href="">Thecutflooring@gmail.com</Link>
+                <Link href="mailto:Thecutflooring@gmail.com">
+                  Thecutflooring@gmail.com
+                </Link>
               </p>
             </div>
           </li>

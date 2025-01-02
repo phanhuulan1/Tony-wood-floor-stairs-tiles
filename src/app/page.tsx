@@ -1,10 +1,8 @@
-import Header from "@/components/Header";
 import Banner from "@/components/Banner";
-import Footer from "@/components/Footer";
 import Installation from "@/components/Installation";
 import WhyUsComponent from "@/components/WhyUs";
 
-export default function Home() {
+const Home = () => {
   return (
     <main id="home-page">
       <Banner />
@@ -12,4 +10,5 @@ export default function Home() {
       <WhyUsComponent />
     </main>
   );
-}
+};
+export default Home;

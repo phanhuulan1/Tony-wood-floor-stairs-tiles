@@ -18,8 +18,8 @@ const Banner = () => {
             Residential & Commercial | Licensed & Insured.
           </h2>
           <div className="banner-wrapper-link">
-            <Link className="banner-link" href="/">
-              Rea more
+            <Link className="banner-link" href="/about">
+              Read more
             </Link>
           </div>
         </div>

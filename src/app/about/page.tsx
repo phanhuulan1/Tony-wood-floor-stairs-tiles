@@ -51,7 +51,7 @@ const AboutPage = () => {
             </li>
             <li className="col-4 col-small-12 why-us-item">
               <div className="card-body">
-                <p className="card-title">Stairs Installation.</p>
+                <p className="card-title under-line">Stairs Installation.</p>
                 <p className="card-sub-title">
                   If you need stair renovations, we can help you with installing
                   solid oak and maple stair tread and stair nosing to protect
