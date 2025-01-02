@@ -1,0 +1,118 @@
+#services-page>header {
+  background-color: var(--deep-black);
+}
+
+.floor-section {
+  padding: 32px 0 64px;
+}
+
+.floor-section .floor-item-img {
+  padding: 64px 0;
+}
+
+.floor-section .floor-img {
+  aspect-ratio: 1;
+  width: 100%;
+  object-fit: cover;
+}
+
+.floor-section .row>[class*=col-].floor-item-content {
+  display: flex;
+  align-items: center;
+}
+
+.floor-wrapper {
+  padding: 60px 64px;
+  margin-left: -50%;
+  background-color: var(--white);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .2);
+}
+
+.floor-section .floor-title {
+  margin-bottom: 12px;
+  font-family: "Cardo";
+  color: var(--black);
+  font-size: var(--font-32);
+  font-weight: 400;
+}
+
+.floor-section .floor-desc {
+  margin-bottom: 36px;
+  font-family: "Libre Franklin";
+  color: var(--deep-black);
+  font-size: var(--font-16);
+  font-weight: 400;
+}
+
+.floor-section .floor-link {
+  padding: 12px 20px;
+  font-family: "Libre Franklin";
+  color: var(--white);
+  font-size: var(--font-16);
+  font-weight: 500;
+  line-height: 24px;
+  background-color: var(--black);
+  border-radius: 4px;
+}
+
+.stairs-section .col-6.col-small-6.stairs-item {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.stairs-section .stairs-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.stairs-section .stairs-img {
+  aspect-ratio: 606/456;
+  object-fit: cover;
+  width: 100%;
+}
+
+.stairs-section .stairs-title {
+  margin-bottom: 16px;
+  font-family: "Cardo";
+  color: var(--white);
+  font-size: var(--font-32);
+  font-weight: 400;
+}
+
+.stairs-section .stairs-desc {
+  margin-bottom: 34px;
+  font-family: "Libre Franklin";
+  color: var(--white);
+  font-size: var(--font-16);
+  font-weight: 400;
+}
+
+.stairs-section .stairs-link {
+  padding: 12px 20px;
+  font-family: "Libre Franklin";
+  color: var(--deep-black);
+  font-size: var(--font-16);
+  font-weight: 500;
+  line-height: 24px;
+  background-color: var(--blush-white);
+  border-radius: 4px;
+}
+
+.stairs-section .stairs-link:hover {
+  color: var(--white);
+  background-color: var(--blackened-grey);
+}
+
+@media (max-width: 768px) {
+  .floor-section .row>[class*=col-].floor-item-content {
+    margin-top: -4px;
+  }
+
+  .floor-wrapper {
+    margin-left: 0;
+    padding: 16px 30px;
+  }
+}

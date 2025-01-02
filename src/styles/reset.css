@@ -16,7 +16,6 @@ body {
   position: relative;
   font-size: var(--font-16);
   color: var(--white);
-  background-color: var(--deep-black);
   -webkit-tap-highlight-color: transparent;
   scroll-behavior: smooth !important;
   -webkit-font-smoothing: antialiased;

@@ -1,0 +1,36 @@
+#about-page>header {
+  background-color: var(--deep-black);
+}
+
+#about-page>.why-us-section {
+  background-color: var(--deep-black);
+}
+
+#about-page .our-story-section .our-story-desc {
+  padding-top: 32px;
+  padding-bottom: 64px;
+  max-width: 620px;
+  margin: 0 auto;
+  font-family: "Libre Franklin";
+  color: var(--deep-black);
+  font-size: var(--font-18);
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+}
+
+#about-page .banner-section {
+  padding-bottom: 0;
+}
+
+#about-page .banner-img {
+  height: 120px;
+  min-height: 100px;
+}
+
+#about-page .banner-title {
+  font-family: "Cardo";
+  color: var(--white);
+  font-size: var(--font-48);
+  font-weight: 400;
+}

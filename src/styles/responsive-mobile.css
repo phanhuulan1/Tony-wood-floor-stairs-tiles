@@ -1,0 +1,15 @@
+@media screen and (max-width: 700px) {
+  .header-menu-desktop {
+    display: none;
+  }
+
+  .header-menu-mobile {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .why-us-section .why-us-item:not(:first-child) {
+    margin-top: 60px;
+  }
+}

@@ -1,0 +1,53 @@
+#gallery-page {
+  background-color: var(--deep-black);
+}
+
+#gallery-page .section-title {
+  padding-top: 64px;
+  margin-bottom: 16px;
+  font-family: "Cardo";
+  color: var(--blush-white);
+  font-size: var(--font-32);
+  font-weight: 400;
+  text-align: left;
+}
+
+#gallery-page .section-sub-title {
+  font-family: "Libre Franklin";
+  color: var(--white);
+  font-size: var(--font-16);
+  font-weight: 400;
+}
+
+#gallery-page .section-sub-title.top {
+  margin-bottom: 12px;
+}
+
+#gallery-page .row.gallery-list {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+#gallery-page .col-4.col-small-6.gallery-item {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 30px;
+}
+
+#gallery-page .gallery-section .gallery-wrapper-img {
+  margin: 0 auto;
+  max-width: 370px;
+  aspect-ratio: 1;
+  overflow: hidden;
+}
+
+#gallery-page .gallery-section .gallery-wrapper-img>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+#gallery-page .gallery-section .gallery-item:hover .gallery-wrapper-img>img {
+  transform: scale(1.1, 1.1);
+}

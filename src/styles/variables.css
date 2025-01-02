@@ -7,6 +7,8 @@
   --pure-black: #020202;
   --cloud-white: #ffffffbf;
   --coal-black: #141414;
+  --black: #000000;
+  --graphite-black: #181818;
   --font-16: 16px;
   --font-18: 18px;
   --font-24: 24px;
@@ -14,5 +16,14 @@
   --font-28: 28px;
   --font-32: 32px;
   --font-38: 38px;
+  --font-48: 48px;
   --font-57: 57px;
+}
+
+#home-page {
+  background-color: var(--deep-black);
+}
+
+header {
+  background-color: var(--deep-black);
 }
