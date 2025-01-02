@@ -5,12 +5,13 @@ import { useForm } from "react-hook-form";
 const ContactUsPage = () => {
   const {
     register,
+    watch,
     handleSubmit,
     formState: { errors },
   } = useForm();
 
   const onSubmit = (data: any) => {
-    console.log(data);
+    console.log("data submit form: ", data);
   };
 
   return (
@@ -31,8 +32,12 @@ const ContactUsPage = () => {
                   {...register("firstName", {
                     required: "This field is required.",
                   })}
-                  {...register("name", { required: "This field is required" })}
-                  className={`form-input ${errors.name ? "input-error" : ""}`}
+                  {...register("firstName", {
+                    required: "This field is required",
+                  })}
+                  className={`form-input ${
+                    errors.firstName ? "input-error" : ""
+                  }`}
                 />
                 {errors.firstName?.message && (
                   <p className="error">{String(errors.firstName.message)}</p>
@@ -48,8 +53,12 @@ const ContactUsPage = () => {
                   {...register("lastName", {
                     required: "This field is required.",
                   })}
-                  {...register("name", { required: "This field is required" })}
-                  className={`form-input ${errors.name ? "input-error" : ""}`}
+                  {...register("lastName", {
+                    required: "This field is required",
+                  })}
+                  className={`form-input ${
+                    errors.lastName ? "input-error" : ""
+                  }`}
                 />
                 {errors.lastName?.message && (
                   <p className="error">{String(errors.lastName.message)}</p>
@@ -69,8 +78,8 @@ const ContactUsPage = () => {
                       message: "Invalid email address",
                     },
                   })}
-                  {...register("name", { required: "This field is required" })}
-                  className={`form-input ${errors.name ? "input-error" : ""}`}
+                  {...register("email", { required: "This field is required" })}
+                  className={`form-input ${errors.email ? "input-error" : ""}`}
                 />
                 {errors.email?.message && (
                   <p className="error">{String(errors.email.message)}</p>
@@ -86,8 +95,12 @@ const ContactUsPage = () => {
                   {...register("nameSubject", {
                     required: "This field is required.",
                   })}
-                  {...register("name", { required: "This field is required" })}
-                  className={`form-input ${errors.name ? "input-error" : ""}`}
+                  {...register("nameSubject", {
+                    required: "This field is required",
+                  })}
+                  className={`form-input ${
+                    errors.nameSubject ? "input-error" : ""
+                  }`}
                 />
                 {errors.nameSubject?.message && (
                   <p className="error">{String(errors.nameSubject.message)}</p>
@@ -104,9 +117,11 @@ const ContactUsPage = () => {
                   {...register("message", {
                     required: "This field is required.",
                   })}
-                  {...register("name", { required: "This field is required" })}
+                  {...register("message", {
+                    required: "This field is required",
+                  })}
                   className={`"form-textarea ${
-                    errors.name ? "input-error" : ""
+                    errors.message ? "input-error" : ""
                   }`}
                 />
                 {errors.message?.message && (
