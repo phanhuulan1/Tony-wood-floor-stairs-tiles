@@ -10,21 +10,33 @@ import GalleryImg5 from "../../assets/images/gallery-5.jpeg";
 import GalleryImg6 from "../../assets/images/gallery-6.jpeg";
 
 const GalleryPage = () => {
+
+  interface GalleryInstance {
+    destroy: () => void;
+  }
+
   useEffect(() => {
-    const galleryElement = document.getElementById("gallery-of-page");
+    const galleryElement: HTMLElement | null = document.getElementById("gallery-of-page");
     // Backup original console.log
-    const originalConsoleLog = console.log;
+    const originalConsoleLog: typeof console.log = console.log;
 
     // Disable console.log
     console.log = () => {};
+    let galleryInstance: GalleryInstance | undefined;
     if (galleryElement) {
-      lightGallery(galleryElement, {
+      galleryInstance = lightGallery(galleryElement, {
         plugins: [],
         speed: 500,
-      });
+      }) as GalleryInstance;
     }
     // Restore original console.log after lightGallery initialization
     console.log = originalConsoleLog;
+
+    return () => {
+      if (galleryInstance) {
+        galleryInstance.destroy();
+      }
+    };
   }, []);
 
   return (

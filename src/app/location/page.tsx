@@ -36,7 +36,8 @@ const LocationPage = () => {
                     <div className="location-address">
                       <h4 className="location-title">Address</h4>
                       <p className="location-sub-title">
-                        1196 Kennedy Rd, Scarborough Toronto , Ontario Canada
+                        399 Humberline Dr 
+                        Toronto ON M9W 5T5 Canada,
                       </p>
                     </div>
                   </div>
@@ -45,16 +46,16 @@ const LocationPage = () => {
                       <div className="location-phone">
                         <h4 className="location-title">Phone</h4>
                         <p className="location-sub-title">
-                          <Link href="tel:6472963377">6472963377</Link>
+                          <Link href="tel:6475733136">6475733136</Link>
                         </p>
                       </div>
                       <div className="location-email">
                         <h4 className="location-title">Email</h4>
                         <Link
-                          href="mailto:Thecutflooring@gmail.com"
+                          href="mailto:hotuan1100@gmail.com"
                           className="location-sub-title email-link"
                         >
-                          Thecutflooring@gmail.com
+                          Hotuan1100@gmail.com
                         </Link>
                       </div>
                     </div>

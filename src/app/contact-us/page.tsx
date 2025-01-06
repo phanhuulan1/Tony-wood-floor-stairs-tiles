@@ -5,13 +5,12 @@ import { useForm } from "react-hook-form";
 const ContactUsPage = () => {
   const {
     register,
-    watch,
     handleSubmit,
     formState: { errors },
-  } = useForm();
+  } = useForm<{ firstName: string; lastName: string; email: string; nameSubject: string; message: string }>();
 
-  const onSubmit = (data: any) => {
-    console.log("data submit form: ", data);
+  const onSubmit = (data: { firstName: string; lastName: string; email: string; nameSubject: string; message: string }) => {
+    console.log('form', data);  
   };
 
   return (
@@ -113,6 +112,7 @@ const ContactUsPage = () => {
                   Your message
                 </label>
                 <textarea
+                  style={{ padding: "10px" }}
                   id="message"
                   {...register("message", {
                     required: "This field is required.",

@@ -16,7 +16,7 @@ const MapComponent = () => {
       const map = new mapboxgl.Map({
         container: mapContainer.current, // Thẻ DOM chứa bản đồ
         style: "mapbox://styles/mapbox/streets-v11", // Kiểu bản đồ
-        center: [-79.2564, 43.7482], // Tọa độ trung tâm (longitude, latitude)
+        center: [-79.62121047035406, 43.744664826359006], // Tọa độ trung tâm (longitude, latitude)
         zoom: 12, // Mức zoom
       });
 

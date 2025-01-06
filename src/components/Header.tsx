@@ -50,7 +50,7 @@ const Header = () => {
         <div className="header-top">
           <Link
             className="instagram-icon"
-            href="https://instagram.com/thecutflooring?utm_medium=copy_link"
+            href="https://www.instagram.com/tonywoodfloorstairs"
           >
             <i className="fa-brands fa-instagram"></i>
           </Link>
@@ -60,7 +60,7 @@ const Header = () => {
                 <img
                   className="the-cut-logo"
                   src={TheCutFlooringLogo.src}
-                  alt="The cut flooring Logo"
+                  alt="Tony wood floor stairs & tiles Logo"
                 />
               </div>
             </Link>
@@ -90,7 +90,7 @@ const Header = () => {
                 <img
                   className="the-cut-logo"
                   src={TheCutFlooringLogo.src}
-                  alt="The cut flooring Logo"
+                  alt="Tony wood floor stairs & tiles Logo"
                 />
               </div>
             </Link>

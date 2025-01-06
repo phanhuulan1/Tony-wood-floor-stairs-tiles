@@ -24,8 +24,9 @@ const Installation = () => {
     // Disable console.log
     console.log = () => {};
 
+    let galleryInstance: ReturnType<typeof lightGallery> | undefined;
     if (galleryElement) {
-      lightGallery(galleryElement, {
+      galleryInstance = lightGallery(galleryElement, {
         plugins: [],
         speed: 500,
       });
@@ -33,6 +34,12 @@ const Installation = () => {
 
     // Restore original console.log after lightGallery initialization
     console.log = originalConsoleLog;
+
+    return () => {
+      if (galleryInstance) {
+        galleryInstance.destroy();
+      }
+    };
   }, []);
 
   return (
@@ -63,26 +70,11 @@ const Installation = () => {
               <img
                 className="installation-img"
                 src={Hardwood.src}
-                alt="Hardwood"
+                alt="Sand Flooring"
               />
             </div>
             <div className="card-footer">
-              <p className="card-footer-title"> Hardwood</p>
-            </div>
-          </a>
-          <a
-            href={Engineered.src}
-            className="gallery-item col-4 col-small-6 installation-item"
-          >
-            <div className="wrapper-img">
-              <img
-                className="installation-img"
-                src={Engineered.src}
-                alt="Engineered"
-              />
-            </div>
-            <div className="card-footer">
-              <p className="card-footer-title">Engineered</p>
+              <p className="card-footer-title">Sand Flooring</p>
             </div>
           </a>
           <a
@@ -93,26 +85,11 @@ const Installation = () => {
               <img
                 className="installation-img"
                 src={Laminate.src}
-                alt="Laminate"
+                alt="Laminate & Vinyl"
               />
             </div>
             <div className="card-footer">
-              <p className="card-footer-title">Laminate</p>
-            </div>
-          </a>
-          <a
-            href={CapetTile.src}
-            className="gallery-item col-4 col-small-6 installation-item"
-          >
-            <div className="wrapper-img">
-              <img
-                className="installation-img"
-                src={CapetTile.src}
-                alt="CapetTile"
-              />
-            </div>
-            <div className="card-footer">
-              <p className="card-footer-title">CapetTile</p>
+              <p className="card-footer-title">Laminate & Vinyl</p>
             </div>
           </a>
           <a
@@ -127,6 +104,37 @@ const Installation = () => {
             </div>
           </a>
           <a
+            href={Engineered.src}
+            className="gallery-item col-4 col-small-6 installation-item"
+          >
+            <div className="wrapper-img">
+              <img
+                className="installation-img"
+                src={Engineered.src}
+                alt="Tiles"
+              />
+            </div>
+            <div className="card-footer">
+              <p className="card-footer-title">Tiles</p>
+            </div>
+          </a>
+         
+          <a
+            href={CapetTile.src}
+            className="gallery-item col-4 col-small-6 installation-item"
+          >
+            <div className="wrapper-img">
+              <img
+                className="installation-img"
+                src={CapetTile.src}
+                alt="Vents"
+              />
+            </div>
+            <div className="card-footer">
+              <p className="card-footer-title">Vents</p>
+            </div>
+          </a>
+          {/* <a
             href={Refinishing.src}
             className="gallery-item col-4 col-small-6 installation-item"
           >
@@ -170,8 +178,8 @@ const Installation = () => {
             <div className="card-footer">
               <p className="card-footer-title">Railing</p>
             </div>
-          </a>
-          <a
+          </a> */}
+          {/* <a
             href={Vinyl.src}
             className="gallery-item col-4 col-small-6 installation-item"
           >
@@ -181,7 +189,7 @@ const Installation = () => {
             <div className="card-footer">
               <p className="card-footer-title">Vinyl</p>
             </div>
-          </a>
+          </a> */}
         </div>
       </div>
     </section>

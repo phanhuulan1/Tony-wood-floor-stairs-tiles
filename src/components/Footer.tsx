@@ -33,18 +33,18 @@ const Footer = () => {
   return (
     <footer className="section footer-section">
       <div className="container">
-        <div className="footer-logo">
+        {/* <div className="footer-logo">
           <Link className="footer-link" href="/">
             <div className="wrapper-logo">
               <img
                 className="the-cut-logo"
                 src={TheCutFlooringLogo.src}
-                alt="The cut flooring Logo"
+                alt="Tony wood floor stairs & tiles Logo"
               />
             </div>
-            <p className="the-cut-title">The Cut Flooring</p>
+            <p className="the-cut-title">Tony wood floor stairs & tiles</p>
           </Link>
-        </div>
+        </div> */}
         <div className="wrapper-footer-menu">
           <ul className="footer-menu">
             {Menus.map((menu, index) => (
@@ -58,7 +58,7 @@ const Footer = () => {
           <div className="footer-instagram">
             <Link
               className="wrapper-instagram"
-              href="https://instagram.com/thecutflooring?utm_medium=copy_link"
+              href="https://www.instagram.com/tonywoodfloorstairs"
             >
               <i className="fa-brands fa-instagram"></i>
             </Link>
@@ -70,15 +70,14 @@ const Footer = () => {
             <div className="footer-item footer-address">
               <h3 className="footer-title">Address</h3>
               <p className="footer-sub-title">
-                1196 Kennedy Rd, Scarborough <br /> Toronto , Ontario, ON M1P
-                2L1, Canada,
+                399 Humberline Dr <br /> Toronto ON M9W 5T5 Canada, 
               </p>
               <p className="footer-contact">
-                <Link href="tel:6472963377">6472963377</Link>
+                <Link href="tel:6475733136">6475733136</Link>
               </p>
               <p className="footer-contact">
-                <Link href="mailto:Thecutflooring@gmail.com">
-                  Thecutflooring@gmail.com
+                <Link href="mailto:hotuan1100@gmail.com">
+                  Hotuan1100@gmail.com
                 </Link>
               </p>
             </div>
@@ -94,7 +93,7 @@ const Footer = () => {
           </li>
         </ul>
         <div className="divider-line" />
-        <p className="copy-right">© 2024 The Cut</p>
+        <p className="copy-right">© 2025 Tony wood floor stairs & tiles</p>
       </div>
     </footer>
   );

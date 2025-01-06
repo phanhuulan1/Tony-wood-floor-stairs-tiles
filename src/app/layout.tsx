@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "The Cut",
+  title: "Tony wood floor stairs & tiles",
   description:
     "FLOORING INSTALLATION Residential & Commercial | Licensed & Insured. Read more TYPES OF FLOORING INSTALLATION Flooring Hardwood Engineered Laminate Carpet tile Stairs Refinishing Recapping Railing Vinyl Why us? Competitive Pricing & Discounts We offer affordable rates while maintaining top notch quality of work we perform for all of our clients. REQUEST",
 };
