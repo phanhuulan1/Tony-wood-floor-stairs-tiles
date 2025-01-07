@@ -9,10 +9,7 @@ import Flooring from "../assets/images/flooring.jpeg";
 import Hardwood from "../assets/images/hardwood.jpeg";
 import Laminate from "../assets/images/laminate.jpeg";
 import Stairs from "../assets/images/stairs.png";
-import Refinishing from "../assets/images/refinishing.jpeg";
-import Recapping from "../assets/images/recapping.jpeg";
-import Railing from "../assets/images/railing.jpeg";
-import Vinyl from "../assets/images/vinyl.jpeg";
+
 
 const Installation = () => {
   useEffect(() => {
@@ -134,62 +131,6 @@ const Installation = () => {
               <p className="card-footer-title">Vents</p>
             </div>
           </a>
-          {/* <a
-            href={Refinishing.src}
-            className="gallery-item col-4 col-small-6 installation-item"
-          >
-            <div className="wrapper-img">
-              <img
-                className="installation-img"
-                src={Refinishing.src}
-                alt="Refinishing"
-              />
-            </div>
-            <div className="card-footer">
-              <p className="card-footer-title">Refinishing</p>
-            </div>
-          </a>
-          <a
-            href={Recapping.src}
-            className="gallery-item col-4 col-small-6 installation-item"
-          >
-            <div className="wrapper-img">
-              <img
-                className="installation-img"
-                src={Recapping.src}
-                alt="Recapping"
-              />
-            </div>
-            <div className="card-footer">
-              <p className="card-footer-title">Recapping</p>
-            </div>
-          </a>
-          <a
-            href={Railing.src}
-            className="gallery-item col-4 col-small-6 installation-item"
-          >
-            <div className="wrapper-img">
-              <img
-                className="installation-img"
-                src={Railing.src}
-                alt="Railing"
-              />
-            </div>
-            <div className="card-footer">
-              <p className="card-footer-title">Railing</p>
-            </div>
-          </a> */}
-          {/* <a
-            href={Vinyl.src}
-            className="gallery-item col-4 col-small-6 installation-item"
-          >
-            <div className="wrapper-img">
-              <img className="installation-img" src={Vinyl.src} alt="Vinyl" />
-            </div>
-            <div className="card-footer">
-              <p className="card-footer-title">Vinyl</p>
-            </div>
-          </a> */}
         </div>
       </div>
     </section>

@@ -1,6 +1,5 @@
 "use client";
 import Link from "next/link";
-import TheCutFlooringLogo from "../assets/images/the-cut-flooring-logo.png";
 
 const Footer = () => {
   const Menus = [
@@ -33,18 +32,6 @@ const Footer = () => {
   return (
     <footer className="section footer-section">
       <div className="container">
-        {/* <div className="footer-logo">
-          <Link className="footer-link" href="/">
-            <div className="wrapper-logo">
-              <img
-                className="the-cut-logo"
-                src={TheCutFlooringLogo.src}
-                alt="Tony wood floor stairs & tiles Logo"
-              />
-            </div>
-            <p className="the-cut-title">Tony wood floor stairs & tiles</p>
-          </Link>
-        </div> */}
         <div className="wrapper-footer-menu">
           <ul className="footer-menu">
             {Menus.map((menu, index) => (
