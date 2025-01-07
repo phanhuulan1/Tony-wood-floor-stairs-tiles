@@ -49,6 +49,18 @@ const Footer = () => {
             >
               <i className="fa-brands fa-instagram"></i>
             </Link>
+            <Link
+              className="wrapper-instagram"
+              href="https://www.tiktok.com/@tonywoodfloorstair?_t=ZS-8sr9mYJMuYh&_r=1"
+            >
+              <i className="fa-brands fa-tiktok"></i>
+            </Link>
+            <Link
+              className="wrapper-instagram"
+              href="https://wa.me/16475733136"
+            >
+              <i className="fa-brands fa-whatsapp"></i>
+            </Link>
           </div>
         </div>
         <div className="divider-line" />

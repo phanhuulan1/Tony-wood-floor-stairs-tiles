@@ -86,3 +86,21 @@
   font-weight: 400;
   line-height: 27px;
 }
+
+@media (min-width: 1024px) {
+  .banner-section .banner-title {
+    width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .banner-section .banner-title {
+    font-size: var(--font-38);
+  }
+}
+
+@media (max-width: 400px) {
+  .banner-section .banner-title {
+    font-size: var(--font-28);
+  }
+}

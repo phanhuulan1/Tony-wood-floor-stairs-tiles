@@ -95,6 +95,10 @@
 }
 
 .footer-section .footer-instagram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 10px;
   min-width: 50px;
 }
 
