@@ -1,13 +1,11 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
-import { useCallback, useEffect, useRef, useState } from "react";
-import lightGallery from "lightgallery";
+import { useCallback, useRef, useState } from "react";
 import "lightgallery/css/lightgallery.css";
 
 import LightGallery from "lightgallery/react";
-import { LightGallerySettings } from "lightgallery/lg-settings";
 import lgZoom from "lightgallery/plugins/zoom";
 import lgVideo from "lightgallery/plugins/video";
-import { InitDetail } from "lightgallery/lg-events";
 
 // start Vinyl And Laminate
 import VinylAndLaminate1 from "../assets/vinyl-and-laminates/vinyl-and-laminate-1.jpg";
@@ -374,6 +372,9 @@ const Installation = () => {
     {
       src: SandFlooring12.src,
     },
+    {
+      src: SandFlooring12.src,
+    },
   ]);
 
   const [floorings] = useState([
@@ -411,7 +412,7 @@ const Installation = () => {
       src: Flooring11.src,
     },
     {
-      src: Flooring11.src,
+      src: Flooring12.src,
     },
     {
       src: Flooring13.src,
