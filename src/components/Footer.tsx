@@ -72,11 +72,16 @@ const Footer = () => {
                 399 Humberline Dr <br /> Toronto ON M9W 5T5 Canada, 
               </p>
               <p className="footer-contact">
-                <Link href="tel:6475733136">6475733136</Link>
+                  <span className="footer-contact">Whats app: </span>
+                 <Link href="https://wa.me/16475733136">6475733136</Link>
               </p>
               <p className="footer-contact">
-                <Link href="mailto:hotuan1100@gmail.com">
-                  Hotuan1100@gmail.com
+              <span className="footer-contact">Instagram: </span>
+                <Link href="https://www.instagram.com/tonywoodfloorstairs/">TONYWOODFLOORSTAIRS</Link>
+              </p>
+              <p className="footer-contact">
+              <span className="footer-contact">Email: </span>
+                <Link href="mailto:hotuan1100@gmail.com">Hotuan1100@gmail.com
                 </Link>
               </p>
             </div>

@@ -47,7 +47,6 @@ import Tile3 from "../assets/tiles/tile-3.jpg";
 import Tile4 from "../assets/tiles/tile-4.jpg";
 import Tile5 from "../assets/tiles/tile-5.jpg";
 import Tile6 from "../assets/tiles/tile-6.jpg";
-import Tile7 from "../assets/tiles/tile-7.jpg";
 // end tile
 
 // start stair
@@ -70,6 +69,39 @@ import Stair16 from "../assets/stairs/stair-16.jpg";
 import Stair17 from "../assets/stairs/stair-17.jpg";
 import Stair18 from "../assets/stairs/stair-18.jpg";
 import Stair19 from "../assets/stairs/stair-19.jpg";
+import Stair20 from "../assets/stairs/stair-20.jpg";
+import Stair21 from "../assets/stairs/stair-21.jpg";
+import Stair22 from "../assets/stairs/stair-22.jpg";
+import Stair23 from "../assets/stairs/stair-23.jpg";
+import Stair24 from "../assets/stairs/stair-24.jpg";
+import Stair25 from "../assets/stairs/stair-25.jpg";
+import Stair26 from "../assets/stairs/stair-26.jpg";
+import Stair27 from "../assets/stairs/stair-27.jpg";
+import Stair28 from "../assets/stairs/stair-28.jpg";
+import Stair29 from "../assets/stairs/stair-29.jpg";
+import Stair30 from "../assets/stairs/stair-30.jpg";
+import Stair31 from "../assets/stairs/stair-31.jpg";
+import Stair32 from "../assets/stairs/stair-32.jpg";
+import Stair33 from "../assets/stairs/stair-33.jpg";
+import Stair34 from "../assets/stairs/stair-34.jpg";
+import Stair35 from "../assets/stairs/stair-35.jpg";
+import Stair36 from "../assets/stairs/stair-36.jpg";
+import Stair37 from "../assets/stairs/stair-37.jpg";
+import Stair38 from "../assets/stairs/stair-38.jpg";
+import Stair39 from "../assets/stairs/stair-39.jpg";
+import Stair40 from "../assets/stairs/stair-40.jpg";
+import Stair41 from "../assets/stairs/stair-41.jpg";
+import Stair42 from "../assets/stairs/stair-42.jpg";
+import Stair43 from "../assets/stairs/stair-43.jpg";
+import Stair44 from "../assets/stairs/stair-44.jpg";
+import Stair45 from "../assets/stairs/stair-45.jpg";
+import Stair46 from "../assets/stairs/stair-46.jpg";
+import Stair47 from "../assets/stairs/stair-47.jpg";
+import Stair48 from "../assets/stairs/stair-48.jpg";
+import Stair49 from "../assets/stairs/stair-49.jpg";
+import Stair50 from "../assets/stairs/stair-50.jpg";
+import Stair51 from "../assets/stairs/stair-51.jpg";
+
 // end stair
 
 // start sand-flooring
@@ -261,10 +293,6 @@ const Installation = () => {
       src: Tile6.src,
       subHtml: "<h3>Tiles</h3>",
     },
-    {
-      src: Tile7.src,
-      subHtml: "<h3>Tiles</h3>",
-    },
   ]);
 
   const [stairs] = useState([
@@ -342,6 +370,134 @@ const Installation = () => {
     },
     {
       src: Stair19.src,
+      subHtml: "<h3>Stairs</h3>",
+    },
+    {
+      src: Stair20.src,
+      subHtml: "<h3>Stairs</h3>",
+    },
+    {
+      src: Stair21.src,
+      subHtml: "<h3>Stairs</h3>",
+    },
+    {
+      src: Stair22.src,
+      subHtml: "<h3>Stairs</h3>",
+    },
+    {
+      src: Stair23.src,
+      subHtml: "<h3>Stairs</h3>",
+    },
+    {
+      src: Stair24.src,
+      subHtml: "<h3>Stairs</h3>",
+    },
+    {
+      src: Stair25.src,
+      subHtml: "<h3>Stairs</h3>",
+    },
+    {
+      src: Stair26.src,
+      subHtml: "<h3>Stairs</h3>",
+    },
+    {
+      src: Stair27.src,
+      subHtml: "<h3>Stairs</h3>",
+    },
+    {
+      src: Stair28.src,
+      subHtml: "<h3>Stairs</h3>",
+    },
+    {
+      src: Stair29.src,
+      subHtml: "<h3>Stairs</h3>",
+    },
+    {
+      src: Stair30.src,
+      subHtml: "<h3>Stairs</h3>",
+    },
+    {
+      src: Stair31.src,
+      subHtml: "<h3>Stairs</h3>",
+    },
+    {
+      src: Stair32.src,
+      subHtml: "<h3>Stairs</h3>",
+    },
+    {
+      src: Stair33.src,
+      subHtml: "<h3>Stairs</h3>",
+    },
+    {
+      src: Stair34.src,
+      subHtml: "<h3>Stairs</h3>",
+    },
+    {
+      src: Stair35.src,
+      subHtml: "<h3>Stairs</h3>",
+    },
+    {
+      src: Stair36.src,
+      subHtml: "<h3>Stairs</h3>",
+    },
+    {
+      src: Stair37.src,
+      subHtml: "<h3>Stairs</h3>",
+    },
+    {
+      src: Stair38.src,
+      subHtml: "<h3>Stairs</h3>",
+    },
+    {
+      src: Stair39.src,
+      subHtml: "<h3>Stairs</h3>",
+    },
+    {
+      src: Stair40.src,
+      subHtml: "<h3>Stairs</h3>",
+    },
+    {
+      src: Stair41.src,
+      subHtml: "<h3>Stairs</h3>",
+    },
+    {
+      src: Stair42.src,
+      subHtml: "<h3>Stairs</h3>",
+    },
+    {
+      src: Stair43.src,
+      subHtml: "<h3>Stairs</h3>",
+    },
+    {
+      src: Stair44.src,
+      subHtml: "<h3>Stairs</h3>",
+    },
+    {
+      src: Stair45.src,
+      subHtml: "<h3>Stairs</h3>",
+    },
+    {
+      src: Stair46.src,
+      subHtml: "<h3>Stairs</h3>",
+    },
+    {
+      src: Stair47.src,
+      subHtml: "<h3>Stairs</h3>",
+    },
+    {
+      src: Stair48.src,
+      subHtml: "<h3>Stairs</h3>",
+    },
+    {
+      src: Stair49.src,
+      subHtml: "<h3>Stairs</h3>",
+    },
+    {
+      src: Stair50.src,
+      subHtml: "<h3>Stairs</h3>",
+    },
+    {
+      src: Stair51.src,
       subHtml: "<h3>Stairs</h3>",
     },
   ]);
