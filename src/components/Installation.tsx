@@ -30,7 +30,6 @@ import VinylAndLaminate19 from "../assets/vinyl-and-laminates/vinyl-and-laminate
 import VinylAndLaminate20 from "../assets/vinyl-and-laminates/vinyl-and-laminate-20.jpg";
 import VinylAndLaminate21 from "../assets/vinyl-and-laminates/vinyl-and-laminate-21.jpg";
 import VinylAndLaminate22 from "../assets/vinyl-and-laminates/vinyl-and-laminate-22.jpg";
-import VinylAndLaminate23 from "../assets/vinyl-and-laminates/vinyl-and-laminate-23.jpg";
 // emd Vinyl And Laminate
 
 // start vent
@@ -39,8 +38,6 @@ import Vent3 from "../assets/vents/vent-3.jpg";
 import Vent4 from "../assets/vents/vent-4.jpg";
 import Vent5 from "../assets/vents/vent-5.jpg";
 import Vent6 from "../assets/vents/vent-6.jpg";
-import Vent7 from "../assets/vents/vent-7.jpg";
-import Vent8 from "../assets/vents/vent-8.jpg";
 // end vent
 
 // start tile
@@ -51,11 +48,6 @@ import Tile4 from "../assets/tiles/tile-4.jpg";
 import Tile5 from "../assets/tiles/tile-5.jpg";
 import Tile6 from "../assets/tiles/tile-6.jpg";
 import Tile7 from "../assets/tiles/tile-7.jpg";
-import Tile8 from "../assets/tiles/tile-8.jpg";
-import Tile9 from "../assets/tiles/tile-9.jpg";
-import Tile10 from "../assets/tiles/tile-10.jpg";
-import Tile11 from "../assets/tiles/tile-11.jpg";
-import Tile12 from "../assets/tiles/tile-12.jpg";
 // end tile
 
 // start stair
@@ -120,16 +112,6 @@ import Flooring21 from "../assets/floorings/flooring-21.jpg";
 import Flooring22 from "../assets/floorings/flooring-22.jpg";
 import Flooring23 from "../assets/floorings/flooring-23.jpg";
 import Flooring24 from "../assets/floorings/flooring-24.jpg";
-import Flooring25 from "../assets/floorings/flooring-25.jpg";
-import Flooring26 from "../assets/floorings/flooring-26.jpg";
-import Flooring27 from "../assets/floorings/flooring-27.jpg";
-import Flooring28 from "../assets/floorings/flooring-28.jpg";
-import Flooring29 from "../assets/floorings/flooring-29.jpg";
-import Flooring30 from "../assets/floorings/flooring-30.jpg";
-import Flooring31 from "../assets/floorings/flooring-31.jpg";
-import Flooring32 from "../assets/floorings/flooring-32.jpg";
-import Flooring33 from "../assets/floorings/flooring-33.jpg";
-import Flooring34 from "../assets/floorings/flooring-34.jpg";
 // end flooring
 
 const Installation = () => {
@@ -143,463 +125,378 @@ const Installation = () => {
   const [vinylAndLaminates] = useState([
     {
       src: VinylAndLaminate1.src,
-      subHtml: '<h3>Laminate & Viny</h3>',
+      subHtml: "<h3>Laminate & Viny</h3>",
     },
     {
       src: VinylAndLaminate2.src,
-      subHtml: '<h3>Laminate & Viny</h3>',
+      subHtml: "<h3>Laminate & Viny</h3>",
     },
     {
       src: VinylAndLaminate3.src,
-      subHtml: '<h3>Laminate & Viny</h3>',
+      subHtml: "<h3>Laminate & Viny</h3>",
     },
     {
       src: VinylAndLaminate4.src,
-      subHtml: '<h3>Laminate & Viny</h3>',
+      subHtml: "<h3>Laminate & Viny</h3>",
     },
     {
       src: VinylAndLaminate5.src,
-      subHtml: '<h3>Laminate & Viny</h3>',
+      subHtml: "<h3>Laminate & Viny</h3>",
     },
     {
       src: VinylAndLaminate6.src,
-      subHtml: '<h3>Laminate & Viny</h3>',
+      subHtml: "<h3>Laminate & Viny</h3>",
     },
     {
       src: VinylAndLaminate7.src,
-      subHtml: '<h3>Laminate & Viny</h3>',
+      subHtml: "<h3>Laminate & Viny</h3>",
     },
     {
       src: VinylAndLaminate8.src,
-      subHtml: '<h3>Laminate & Viny</h3>',
+      subHtml: "<h3>Laminate & Viny</h3>",
     },
     {
       src: VinylAndLaminate9.src,
-      subHtml: '<h3>Laminate & Viny</h3>',
+      subHtml: "<h3>Laminate & Viny</h3>",
     },
     {
       src: VinylAndLaminate10.src,
-      subHtml: '<h3>Laminate & Viny</h3>',
+      subHtml: "<h3>Laminate & Viny</h3>",
     },
     {
       src: VinylAndLaminate11.src,
-      subHtml: '<h3>Laminate & Viny</h3>',
+      subHtml: "<h3>Laminate & Viny</h3>",
     },
     {
       src: VinylAndLaminate12.src,
-      subHtml: '<h3>Laminate & Viny</h3>',
+      subHtml: "<h3>Laminate & Viny</h3>",
     },
     {
       src: VinylAndLaminate13.src,
-      subHtml: '<h3>Laminate & Viny</h3>',
+      subHtml: "<h3>Laminate & Viny</h3>",
     },
     {
       src: VinylAndLaminate14.src,
-      subHtml: '<h3>Laminate & Viny</h3>',
+      subHtml: "<h3>Laminate & Viny</h3>",
     },
     {
       src: VinylAndLaminate15.src,
-      subHtml: '<h3>Laminate & Viny</h3>',
+      subHtml: "<h3>Laminate & Viny</h3>",
     },
     {
       src: VinylAndLaminate16.src,
-      subHtml: '<h3>Laminate & Viny</h3>',
+      subHtml: "<h3>Laminate & Viny</h3>",
     },
     {
       src: VinylAndLaminate17.src,
-      subHtml: '<h3>Laminate & Viny</h3>',
+      subHtml: "<h3>Laminate & Viny</h3>",
     },
     {
       src: VinylAndLaminate18.src,
-      subHtml: '<h3>Laminate & Viny</h3>',
+      subHtml: "<h3>Laminate & Viny</h3>",
     },
     {
       src: VinylAndLaminate19.src,
-      subHtml: '<h3>Laminate & Viny</h3>',
+      subHtml: "<h3>Laminate & Viny</h3>",
     },
     {
       src: VinylAndLaminate20.src,
-      subHtml: '<h3>Laminate & Viny</h3>',
+      subHtml: "<h3>Laminate & Viny</h3>",
     },
     {
       src: VinylAndLaminate21.src,
-      subHtml: '<h3>Laminate & Viny</h3>',
+      subHtml: "<h3>Laminate & Viny</h3>",
     },
     {
       src: VinylAndLaminate22.src,
-      subHtml: '<h3>Laminate & Viny</h3>',
-    },
-    {
-      src: VinylAndLaminate23.src,
-      subHtml: '<h3>Laminate & Viny</h3>',
+      subHtml: "<h3>Laminate & Viny</h3>",
     },
   ]);
 
   const [vents] = useState([
     {
       src: Vent2.src,
-      subHtml: '<h3>Vents</h3>',
+      subHtml: "<h3>Vents</h3>",
     },
     {
       src: Vent3.src,
-      subHtml: '<h3>Vents</h3>',
+      subHtml: "<h3>Vents</h3>",
     },
     {
       src: Vent4.src,
-      subHtml: '<h3>Vents</h3>',
+      subHtml: "<h3>Vents</h3>",
     },
     {
       src: Vent5.src,
-      subHtml: '<h3>Vents</h3>',
+      subHtml: "<h3>Vents</h3>",
     },
     {
       src: Vent6.src,
-      subHtml: '<h3>Vents</h3>',
-    },
-    {
-      src: Vent7.src,
-      subHtml: '<h3>Vents</h3>',
-    },
-    {
-      src: Vent8.src,
-      subHtml: '<h3>Vents</h3>',
+      subHtml: "<h3>Vents</h3>",
     },
   ]);
 
   const [tiles] = useState([
     {
       src: Tile1.src,
-      subHtml: '<h3>Tiles</h3>',
+      subHtml: "<h3>Tiles</h3>",
     },
     {
       src: Tile2.src,
-      subHtml: '<h3>Tiles</h3>',
+      subHtml: "<h3>Tiles</h3>",
     },
     {
       src: Tile3.src,
-      subHtml: '<h3>Tiles</h3>',
+      subHtml: "<h3>Tiles</h3>",
     },
     {
       src: Tile4.src,
-      subHtml: '<h3>Tiles</h3>',
+      subHtml: "<h3>Tiles</h3>",
     },
     {
       src: Tile5.src,
-      subHtml: '<h3>Tiles</h3>',
+      subHtml: "<h3>Tiles</h3>",
     },
     {
       src: Tile6.src,
-      subHtml: '<h3>Tiles</h3>',
+      subHtml: "<h3>Tiles</h3>",
     },
     {
       src: Tile7.src,
-      subHtml: '<h3>Tiles</h3>',
-    },
-    {
-      src: Tile8.src,
-      subHtml: '<h3>Tiles</h3>',
-    },
-    {
-      src: Tile9.src,
-      subHtml: '<h3>Tiles</h3>',
-    },
-    {
-      src: Tile10.src,
-      subHtml: '<h3>Tiles</h3>',
-    },
-    {
-      src: Tile11.src,
-      subHtml: '<h3>Tiles</h3>',
-    },
-    {
-      src: Tile12.src,
-      subHtml: '<h3>Tiles</h3>',
+      subHtml: "<h3>Tiles</h3>",
     },
   ]);
 
   const [stairs] = useState([
     {
       src: Stair1.src,
-      subHtml: '<h3>Stairs</h3>',
+      subHtml: "<h3>Stairs</h3>",
     },
     {
       src: Stair2.src,
-      subHtml: '<h3>Stairs</h3>',
+      subHtml: "<h3>Stairs</h3>",
     },
     {
       src: Stair3.src,
-      subHtml: '<h3>Stairs</h3>',
+      subHtml: "<h3>Stairs</h3>",
     },
     {
       src: Stair4.src,
-      subHtml: '<h3>Stairs</h3>',
+      subHtml: "<h3>Stairs</h3>",
     },
     {
       src: Stair5.src,
-      subHtml: '<h3>Stairs</h3>',
+      subHtml: "<h3>Stairs</h3>",
     },
     {
       src: Stair6.src,
-      subHtml: '<h3>Stairs</h3>',
+      subHtml: "<h3>Stairs</h3>",
     },
     {
       src: Stair7.src,
-      subHtml: '<h3>Stairs</h3>',
+      subHtml: "<h3>Stairs</h3>",
     },
     {
       src: Stair8.src,
-      subHtml: '<h3>Stairs</h3>',
+      subHtml: "<h3>Stairs</h3>",
     },
     {
       src: Stair9.src,
-      subHtml: '<h3>Stairs</h3>',
+      subHtml: "<h3>Stairs</h3>",
     },
     {
       src: Stair10.src,
-      subHtml: '<h3>Stairs</h3>',
+      subHtml: "<h3>Stairs</h3>",
     },
     {
       src: Stair11.src,
-      subHtml: '<h3>Stairs</h3>',
+      subHtml: "<h3>Stairs</h3>",
     },
     {
       src: Stair12.src,
-      subHtml: '<h3>Stairs</h3>',
+      subHtml: "<h3>Stairs</h3>",
     },
     {
       src: Stair13.src,
-      subHtml: '<h3>Stairs</h3>',
+      subHtml: "<h3>Stairs</h3>",
     },
     {
       src: Stair14.src,
-      subHtml: '<h3>Stairs</h3>',
+      subHtml: "<h3>Stairs</h3>",
     },
     {
       src: Stair15.src,
-      subHtml: '<h3>Stairs</h3>',
+      subHtml: "<h3>Stairs</h3>",
     },
     {
       src: Stair16.src,
-      subHtml: '<h3>Stairs</h3>',
+      subHtml: "<h3>Stairs</h3>",
     },
     {
       src: Stair17.src,
-      subHtml: '<h3>Stairs</h3>',
+      subHtml: "<h3>Stairs</h3>",
     },
     {
       src: Stair18.src,
-      subHtml: '<h3>Stairs</h3>',
+      subHtml: "<h3>Stairs</h3>",
     },
     {
       src: Stair19.src,
-      subHtml: '<h3>Stairs</h3>',
+      subHtml: "<h3>Stairs</h3>",
     },
   ]);
 
   const [sandFloorings] = useState([
     {
       src: SandFlooring1.src,
-      subHtml: '<h3>Sand Flooring</h3>',
+      subHtml: "<h3>Sand Flooring</h3>",
     },
     {
       src: SandFlooring2.src,
-      subHtml: '<h3>Sand Flooring</h3>',
-
+      subHtml: "<h3>Sand Flooring</h3>",
     },
     {
       src: SandFlooring3.src,
-      subHtml: '<h3>Sand Flooring</h3>',
-
+      subHtml: "<h3>Sand Flooring</h3>",
     },
     {
       src: SandFlooring4.src,
-      subHtml: '<h3>Sand Flooring</h3>',
-
+      subHtml: "<h3>Sand Flooring</h3>",
     },
     {
       src: SandFlooring5.src,
-      subHtml: '<h3>Sand Flooring</h3>',
-
+      subHtml: "<h3>Sand Flooring</h3>",
     },
     {
       src: SandFlooring6.src,
-      subHtml: '<h3>Sand Flooring</h3>',
-
+      subHtml: "<h3>Sand Flooring</h3>",
     },
     {
       src: SandFlooring7.src,
-      subHtml: '<h3>Sand Flooring</h3>',
-
+      subHtml: "<h3>Sand Flooring</h3>",
     },
     {
       src: SandFlooring8.src,
-      subHtml: '<h3>Sand Flooring</h3>',
-
+      subHtml: "<h3>Sand Flooring</h3>",
     },
     {
       src: SandFlooring9.src,
-      subHtml: '<h3>Sand Flooring</h3>',
-
+      subHtml: "<h3>Sand Flooring</h3>",
     },
     {
       src: SandFlooring10.src,
-      subHtml: '<h3>Sand Flooring</h3>',
-
+      subHtml: "<h3>Sand Flooring</h3>",
     },
     {
       src: SandFlooring11.src,
-      subHtml: '<h3>Sand Flooring</h3>',
-
+      subHtml: "<h3>Sand Flooring</h3>",
     },
     {
       src: SandFlooring12.src,
-      subHtml: '<h3>Sand Flooring</h3>',
-
+      subHtml: "<h3>Sand Flooring</h3>",
     },
     {
       src: SandFlooring12.src,
-      subHtml: '<h3>Sand Flooring</h3>',
-
+      subHtml: "<h3>Sand Flooring</h3>",
     },
   ]);
 
   const [floorings] = useState([
     {
       src: Flooring1.src,
-      subHtml: '<h3>Flooring</h3>',
-
+      subHtml: "<h3>Flooring</h3>",
     },
     {
       src: Flooring2.src,
-      subHtml: '<h3>Flooring</h3>',
+      subHtml: "<h3>Flooring</h3>",
     },
     {
       src: Flooring3.src,
-      subHtml: '<h3>Flooring</h3>',
+      subHtml: "<h3>Flooring</h3>",
     },
     {
       src: Flooring4.src,
-      subHtml: '<h3>Flooring</h3>',
+      subHtml: "<h3>Flooring</h3>",
     },
     {
       src: Flooring5.src,
-      subHtml: '<h3>Flooring</h3>',
+      subHtml: "<h3>Flooring</h3>",
     },
     {
       src: Flooring6.src,
-      subHtml: '<h3>Flooring</h3>',
+      subHtml: "<h3>Flooring</h3>",
     },
     {
       src: Flooring7.src,
-      subHtml: '<h3>Flooring</h3>',
+      subHtml: "<h3>Flooring</h3>",
     },
     {
       src: Flooring8.src,
-      subHtml: '<h3>Flooring</h3>',
+      subHtml: "<h3>Flooring</h3>",
     },
     {
       src: Flooring9.src,
-      subHtml: '<h3>Flooring</h3>',
+      subHtml: "<h3>Flooring</h3>",
     },
     {
       src: Flooring10.src,
-      subHtml: '<h3>Flooring</h3>',
+      subHtml: "<h3>Flooring</h3>",
     },
     {
       src: Flooring11.src,
-      subHtml: '<h3>Flooring</h3>',
+      subHtml: "<h3>Flooring</h3>",
     },
     {
       src: Flooring12.src,
-      subHtml: '<h3>Flooring</h3>',
+      subHtml: "<h3>Flooring</h3>",
     },
     {
       src: Flooring13.src,
-      subHtml: '<h3>Flooring</h3>',
+      subHtml: "<h3>Flooring</h3>",
     },
     {
       src: Flooring14.src,
-      subHtml: '<h3>Flooring</h3>',
+      subHtml: "<h3>Flooring</h3>",
     },
     {
       src: Flooring15.src,
-      subHtml: '<h3>Flooring</h3>',
+      subHtml: "<h3>Flooring</h3>",
     },
     {
       src: Flooring16.src,
-      subHtml: '<h3>Flooring</h3>',
+      subHtml: "<h3>Flooring</h3>",
     },
     {
       src: Flooring17.src,
-      subHtml: '<h3>Flooring</h3>',
+      subHtml: "<h3>Flooring</h3>",
     },
     {
       src: Flooring18.src,
-      subHtml: '<h3>Flooring</h3>',
+      subHtml: "<h3>Flooring</h3>",
     },
     {
       src: Flooring19.src,
-      subHtml: '<h3>Flooring</h3>',
+      subHtml: "<h3>Flooring</h3>",
     },
     {
       src: Flooring20.src,
-      subHtml: '<h3>Flooring</h3>',
+      subHtml: "<h3>Flooring</h3>",
     },
     {
       src: Flooring21.src,
-      subHtml: '<h3>Flooring</h3>',
+      subHtml: "<h3>Flooring</h3>",
     },
     {
       src: Flooring22.src,
-      subHtml: '<h3>Flooring</h3>',
+      subHtml: "<h3>Flooring</h3>",
     },
     {
       src: Flooring23.src,
-      subHtml: '<h3>Flooring</h3>',
+      subHtml: "<h3>Flooring</h3>",
     },
     {
       src: Flooring24.src,
-      subHtml: '<h3>Flooring</h3>',
-    },
-    {
-      src: Flooring25.src,
-      subHtml: '<h3>Flooring</h3>',
-    },
-    {
-      src: Flooring26.src,
-      subHtml: '<h3>Flooring</h3>',
-    },
-    {
-      src: Flooring27.src,
-      subHtml: '<h3>Flooring</h3>',
-    },
-    {
-      src: Flooring28.src,
-      subHtml: '<h3>Flooring</h3>',
-    },
-    {
-      src: Flooring29.src,
-      subHtml: '<h3>Flooring</h3>',
-    },
-    {
-      src: Flooring30.src,
-      subHtml: '<h3>Flooring</h3>',
-    },
-    {
-      src: Flooring31.src,
-      subHtml: '<h3>Flooring</h3>',
-    },
-    {
-      src: Flooring32.src,
-      subHtml: '<h3>Flooring</h3>',
-    },
-    {
-      src: Flooring33.src,
-      subHtml: '<h3>Flooring</h3>',
-    },
-    {
-      src: Flooring34.src,
-      subHtml: '<h3>Flooring</h3>',
+      subHtml: "<h3>Flooring</h3>",
     },
   ]);
 
@@ -674,7 +571,11 @@ const Installation = () => {
         <div className="row installation-list">
           <div className="col-4 col-small-6 installation-item">
             <div className="wrapper-img">
-              <img onClick={openGalleryFloorings} src={Flooring1.src} alt="Flooring" />
+              <img
+                onClick={openGalleryFloorings}
+                src={Flooring1.src}
+                alt="Flooring"
+              />
             </div>
             <div className="card-footer">
               <p className="card-footer-title">Flooring</p>
