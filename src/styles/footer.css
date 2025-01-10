@@ -85,8 +85,7 @@
 }
 
 .footer-section .copy-right {
-  margin-top: 24px;
-  padding-bottom: 24px;
+  margin: 24px 0 24px;
   color: var(--cloud-white);
   font-family: "Libre Franklin";
   font-size: var(--font-16);
@@ -116,8 +115,38 @@
   font-size: var(--font-24);
 }
 
+.footer-section .location-list {
+  margin-bottom: 20px;
+}
+
 .footer-section .wrapper-footer-menu {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.social-contact {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  display: none;
+  background-color: #28292B;
+}
+
+.social-contact a {
+  font-size: 30px;
+}
+
+@media (max-width: 480px) {
+  .social-contact {
+    display: flex;
+  }
+  .footer-section .copy-right {
+    margin: 24px 0 110px;
+  }
 }
