@@ -65,6 +65,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="divider-line" />
+          <p className="area-text">Areas Serviced: </p>
           <div className="row location-list">
             <div className="col-3 col-small-6">
               <p>Milton, ON</p>
