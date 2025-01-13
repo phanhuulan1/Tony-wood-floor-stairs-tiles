@@ -8,6 +8,7 @@ import GalleryImg3 from "../../assets/images/gallery-3.jpeg";
 import GalleryImg4 from "../../assets/images/gallery-4.jpeg";
 import GalleryImg5 from "../../assets/images/gallery-5.jpeg";
 import GalleryImg6 from "../../assets/images/gallery-6.jpeg";
+import Link from "next/link";
 
 const GalleryPage = () => {
 
@@ -43,7 +44,31 @@ const GalleryPage = () => {
     <main id="gallery-page">
       <section className="section gallery-section">
         <div className="container">
-          <h1 className="section-title">Gallery</h1>
+          <div style={{display: "flex", justifyContent: "space-between", alignItems: "baseline"}}>
+            <h1 className="section-title">Gallery</h1>
+            <div className="social-media" style={{ fontSize: "1.5rem"}}>
+            <Link
+             
+              className="wrapper-instagram"
+              href="https://www.instagram.com/tonywoodfloorstairs"
+            >
+              <i className="fa-brands fa-instagram"></i>
+            </Link>
+            <Link
+              style={{padding: "0 15px"}}
+              className="wrapper-instagram"
+              href="https://www.tiktok.com/@tonywoodfloorstair?_t=ZS-8sr9mYJMuYh&_r=1"
+            >
+              <i className="fa-brands fa-tiktok"></i>
+            </Link>
+            <Link
+              className="wrapper-instagram"
+              href="https://wa.me/16475733136"
+            >
+              <i className="fa-brands fa-whatsapp"></i>
+            </Link>
+          </div>
+          </div>
           <p className="section-sub-title top">Our latest and best photos</p>
           <p className="section-sub-title">
             We love to take pictures and show them to the world.

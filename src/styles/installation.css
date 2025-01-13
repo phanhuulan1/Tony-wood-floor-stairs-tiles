@@ -16,6 +16,14 @@
   box-shadow: 0 8px 16px -4px rgba(0, 0, 0, .24), 0 2px 2px 0 rgba(0, 0, 0, .08);
 }
 
+.installation-section .wrapper-img>img {
+  object-fit: cover;
+  aspect-ratio: 1;
+  width: 100%;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
 .installation-section .section-title {
   margin-bottom: 24px;
   color: var(--blush-white);

@@ -13,7 +13,19 @@
 }
 
 .header-section .instagram-icon>i {
-  font-size: var(--font-24);
+  font-size: var(--font-38);
+}
+
+.header-section .tiktok-icon>i {
+  font-size: var(--font-34);
+}
+
+.header-section .whatsapp-icon>i {
+  font-size: var(--font-38);
+}
+
+.header-section .tiktok-icon {
+  padding:0 20px;
 }
 
 .header-section .header-logo {

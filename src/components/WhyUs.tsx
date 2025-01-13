@@ -14,7 +14,8 @@ const WhyUsComponent = () => {
               </p>
               <p className="card-sub-title">
                 We offer affordable rates while maintaining top notch quality of
-                work we perform for all of our clients.
+                work we perform for all of our clients. Contact us 24/7 to get
+                free estimate and we will respond in an hour.
               </p>
               <Link className="card-link" href="/contact-us">
                 REQUEST QUOTE

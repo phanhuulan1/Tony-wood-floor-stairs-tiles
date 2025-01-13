@@ -12,7 +12,7 @@ const Banner = () => {
         />
         <div className="banner-bg-overlay" />
         <div className="container banner-content">
-          <h1 className="banner-title">FLOORING INSTALLATION</h1>
+          <h1 className="banner-title">FLOORS & STAIRS INSTALLATION</h1>
           <div className="banner-divider" />
           <h2 className="banner-sub-title">
             Residential & Commercial | Licensed & Insured.

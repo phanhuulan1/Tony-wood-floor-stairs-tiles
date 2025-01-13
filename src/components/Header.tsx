@@ -54,9 +54,21 @@ const Header = () => {
           >
             <i className="fa-brands fa-instagram"></i>
           </Link>
+          <Link
+            className="tiktok-icon"
+            href="https://www.tiktok.com/@tonywoodfloorstair?_t=ZS-8sr9mYJMuYh&_r=1"
+          >
+            <i className="fa-brands fa-tiktok"></i>
+          </Link>
+            <Link
+            className="whatsapp-icon"
+            href="https://wa.me/16475733136"
+            >
+            <i className="fa-brands fa-whatsapp"></i>
+          </Link>
           <div className="header-logo">
             <Link className="header-link" href="/">
-              <div className="wrapper-logo">
+              <div style={{marginRight: "170px"}} className="wrapper-logo">
                 <img
                   className="the-cut-logo"
                   src={TheCutFlooringLogo.src}

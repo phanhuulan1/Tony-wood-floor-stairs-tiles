@@ -63,7 +63,7 @@ const AboutPage = () => {
                   detail.
                 </p>
                 <Link className="card-link" href="/services">
-                  Red more
+                  Read more
                 </Link>
               </div>
             </li>
