@@ -3,7 +3,7 @@ import nodemailer from 'nodemailer';
 export async function POST(request) {
   const body = await request.json();
 
-  const { to, subject, text } = body;
+  const { subject, text } = body;
 
   // Cấu hình SMTP transporter
   const transporter = nodemailer.createTransport({
