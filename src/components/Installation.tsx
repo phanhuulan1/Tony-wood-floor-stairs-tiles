@@ -747,7 +747,7 @@ const Installation = () => {
           </div>
           <div className="col-4 col-small-6 installation-item">
             <div className="wrapper-img">
-              <img onClick={openGallerySandFloorings} src={SandFlooring1.src} />
+              <img onClick={openGallerySandFloorings} alt="Sand Flooring" src={SandFlooring1.src} />
             </div>
             <div className="card-footer">
               <p className="card-footer-title">Sand Flooring</p>
@@ -766,6 +766,7 @@ const Installation = () => {
               <img
                 onClick={openGalleryVinylAndLaminates}
                 src={VinylAndLaminate1.src}
+                alt="Laminate & Vinyl"
               />
             </div>
             <div className="card-footer">
@@ -782,7 +783,7 @@ const Installation = () => {
           </div>
           <div className="col-4 col-small-6 installation-item">
             <div className="wrapper-img">
-              <img onClick={openGalleryStairs} src={Stair1.src} />
+              <img onClick={openGalleryStairs} src={Stair1.src} alt="Stair"/>
             </div>
             <div className="card-footer">
               <p className="card-footer-title">Stairs</p>
@@ -798,7 +799,7 @@ const Installation = () => {
           </div>
           <div className="col-4 col-small-6 installation-item">
             <div className="wrapper-img">
-              <img onClick={openGalleryTiles} src={Tile1.src} />
+              <img onClick={openGalleryTiles} src={Tile1.src} alt="Tiles"/>
             </div>
             <div className="card-footer">
               <p className="card-footer-title">Tiles</p>
@@ -814,7 +815,7 @@ const Installation = () => {
           </div>
           <div className="col-4 col-small-6 installation-item">
             <div className="wrapper-img">
-              <img onClick={openGalleryVents} src={Vent2.src} />
+              <img onClick={openGalleryVents} src={Vent2.src} alt="Vents" />
             </div>
             <div className="card-footer">
               <p className="card-footer-title">Vents</p>
