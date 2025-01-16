@@ -1,16 +1,45 @@
 "use client";
 import React from "react";
 import { useForm } from "react-hook-form";
+import { text } from "stream/consumers";
 
 const ContactUsPage = () => {
   const {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm<{ firstName: string; lastName: string; email: string; nameSubject: string; message: string }>();
+  } = useForm<{
+    firstName: string;
+    lastName: string;
+    email: string;
+    nameSubject: string;
+    message: string;
+  }>();
 
-  const onSubmit = (data: { firstName: string; lastName: string; email: string; nameSubject: string; message: string }) => {
-    console.log('form', data);  
+  const onSubmit = async (data: {
+    firstName: string;
+    lastName: string;
+    email: string;
+    nameSubject: string;
+    message: string;
+  }) => {
+    try {
+      const response = await fetch("/api/send-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          subject: 'Contact Us Form:'+ data.lastName + data.firstName + '-'+ data.nameSubject,
+          text: `Name: ${data.firstName} ${data.lastName}\nEmail: ${data.email}\nEmail Subject: ${data.nameSubject}\nMessage: ${data.message}`,
+        }),
+      });
+
+      const result = await response.json();
+      if (result.ok) {
+        console.log("result", result);
+      }
+    } catch (error) {
+      console.error("Error sending email:", error);
+    }
   };
 
   return (

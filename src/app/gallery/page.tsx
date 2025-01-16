@@ -79,7 +79,7 @@ const GalleryPage = () => {
               className="col-4 col-small-6 gallery-item"
             >
               <div className="gallery-wrapper-img">
-                <img className="gallery-img" src={GalleryImg1.src} alt="" />
+                <img className="gallery-img" src={GalleryImg1.src} alt="GalleryImg" />
               </div>
             </a>
             <a
@@ -87,7 +87,7 @@ const GalleryPage = () => {
               className="col-4 col-small-6 gallery-item"
             >
               <div className="gallery-wrapper-img">
-                <img className="gallery-img" src={GalleryImg2.src} alt="" />
+                <img className="gallery-img" src={GalleryImg2.src} alt="GalleryImg" />
               </div>
             </a>
             <a
@@ -95,7 +95,7 @@ const GalleryPage = () => {
               className="col-4 col-small-6 gallery-item"
             >
               <div className="gallery-wrapper-img">
-                <img className="gallery-img" src={GalleryImg3.src} alt="" />
+                <img className="gallery-img" src={GalleryImg3.src} alt="GalleryImg" />
               </div>
             </a>
             <a
@@ -103,7 +103,7 @@ const GalleryPage = () => {
               className="col-4 col-small-6 gallery-item"
             >
               <div className="gallery-wrapper-img">
-                <img className="gallery-img" src={GalleryImg4.src} alt="" />
+                <img className="gallery-img" src={GalleryImg4.src} alt="GalleryImg" />
               </div>
             </a>
             <a
@@ -111,7 +111,7 @@ const GalleryPage = () => {
               className="col-4 col-small-6 gallery-item"
             >
               <div className="gallery-wrapper-img">
-                <img className="gallery-img" src={GalleryImg5.src} alt="" />
+                <img className="gallery-img" src={GalleryImg5.src} alt="GalleryImg" />
               </div>
             </a>
             <a
@@ -119,7 +119,7 @@ const GalleryPage = () => {
               className="col-4 col-small-6 gallery-item"
             >
               <div className="gallery-wrapper-img">
-                <img className="gallery-img" src={GalleryImg6.src} alt="" />
+                <img className="gallery-img" src={GalleryImg6.src} alt="GalleryImg" />
               </div>
             </a>
           </div>
