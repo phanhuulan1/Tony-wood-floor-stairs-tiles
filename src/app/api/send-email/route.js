@@ -18,6 +18,9 @@ export async function POST(request) {
   const transporter = nodemailer.createTransport({
     
     service: 'Gmail', // Hoặc dịch vụ khác
+    tls: {
+      ciphers: "SSLv3",
+  },
     auth: {
       user: process.env.EMAIL_USER, // Email của bạn
       pass: process.env.EMAIL_PASS, // Mật khẩu ứng dụng email
