@@ -16,31 +16,39 @@ export async function POST(request) {
 
   // Cấu hình SMTP transporter
   const transporter = nodemailer.createTransport({
-    
     service: 'Gmail', // Hoặc dịch vụ khác
     tls: {
-      ciphers: "SSLv3",
-  },
+      ciphers: 'SSLv3',
+    },
     auth: {
       user: process.env.EMAIL_USER, // Email của bạn
       pass: process.env.EMAIL_PASS, // Mật khẩu ứng dụng email
     },
-    
   });
-  console.log('EMAIL_USER:', process.env.EMAIL_USER);
-console.log('EMAIL_PASS:', process.env.EMAIL_PASS);
-console.log('TONYWOODFLOORSTAIRS:', process.env.TONYWOODFLOORSTAIRS);
 
+  console.log('EMAIL_USER:', process.env.EMAIL_USER);
+  console.log('EMAIL_PASS:', process.env.EMAIL_PASS);
+  console.log('TONYWOODFLOORSTAIRS:', process.env.TONYWOODFLOORSTAIRS);
 
   try {
-    // Gửi email
-    console.log('process.env.EMAIL_USER, process.env.EMAIL_PASS', process.env.EMAIL_USER, process.env.EMAIL_PASS);
-
-    await transporter.sendMail({
+    // Tạo Promise để gửi email
+    const mailData = {
       from: process.env.EMAIL_USER, // Email người gửi
       to: process.env.TONYWOODFLOORSTAIRS, // Email người nhận
       subject, // Chủ đề email
       text, // Nội dung email
+    };
+
+    await new Promise((resolve, reject) => {
+      transporter.sendMail(mailData, (err, info) => {
+        if (err) {
+          console.error('Error sending email:', err);
+          reject(err);
+        } else {
+          console.log('Email sent successfully:', info);
+          resolve(info);
+        }
+      });
     });
 
     return new Response(
@@ -55,3 +63,4 @@ console.log('TONYWOODFLOORSTAIRS:', process.env.TONYWOODFLOORSTAIRS);
     );
   }
 }
+
