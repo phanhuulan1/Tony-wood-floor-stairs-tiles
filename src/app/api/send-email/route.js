@@ -1,5 +1,8 @@
 import nodemailer from 'nodemailer';
 import cors from 'cors';
+import express from 'express';
+
+const app = express();
 
 const corsOptions = {
   origin: 'https://tonywoodfloorstairs.com/', // Thay bằng domain production của bạn
@@ -9,7 +12,6 @@ app.use(cors(corsOptions));
 
 export async function POST(request) {
   const body = await request.json();
-
   const { subject, text } = body;
 
   // Cấu hình SMTP transporter
