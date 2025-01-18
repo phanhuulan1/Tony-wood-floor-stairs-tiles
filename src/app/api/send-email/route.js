@@ -1,4 +1,11 @@
 import nodemailer from 'nodemailer';
+import cors from 'cors';
+
+const corsOptions = {
+  origin: 'https://your-production-domain.com', // Thay bằng domain production của bạn
+  methods: ['POST'],
+};
+app.use(cors(corsOptions));
 
 export async function POST(request) {
   const body = await request.json();
@@ -13,7 +20,12 @@ export async function POST(request) {
       user: process.env.EMAIL_USER, // Email của bạn
       pass: process.env.EMAIL_PASS, // Mật khẩu ứng dụng email
     },
+    
   });
+  console.log('EMAIL_USER:', process.env.EMAIL_USER);
+console.log('EMAIL_PASS:', process.env.EMAIL_PASS);
+console.log('TONYWOODFLOORSTAIRS:', process.env.TONYWOODFLOORSTAIRS);
+
 
   try {
     // Gửi email

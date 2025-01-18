@@ -41,7 +41,10 @@ export default function RootLayout({
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         />
-        <link rel="icon" href="/logo.png" />
+        <link rel="shortcut icon" href="favicon.ico"sizes="any" />
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"/>
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"/>
+       
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Layout>{children}</Layout>
