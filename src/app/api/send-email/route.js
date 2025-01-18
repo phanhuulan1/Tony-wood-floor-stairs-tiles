@@ -2,7 +2,7 @@ import nodemailer from 'nodemailer';
 import cors from 'cors';
 
 const corsOptions = {
-  origin: 'https://your-production-domain.com', // Thay bằng domain production của bạn
+  origin: 'https://tonywoodfloorstairs.com/', // Thay bằng domain production của bạn
   methods: ['POST'],
 };
 app.use(cors(corsOptions));
