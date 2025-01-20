@@ -20,10 +20,15 @@ export async function POST(request) {
     tls: {
       ciphers: 'SSLv3',
     },
+    port: 465,
     auth: {
-      user: 'sp.tonywoodfloorstairs@gmail.com', // Email của bạn
-      pass: 'zfts lbyw hvxz ybds', // Mật khẩu ứng dụng email
+      type: "OAuth2",
+      user: process.env.EMAIL_USER,
+      pass: process.env.EMAIL_PASS,
+      clientId: process.env.OAUTH_CLIENTID,
+      clientSecret: process.env.OAUTH_CLIENT_SECRET,
     },
+    secure: true,
   });
 
   console.log('EMAIL_USER:', process.env.EMAIL_USER);
@@ -33,8 +38,8 @@ export async function POST(request) {
   try {
     // Tạo Promise để gửi email
     const mailData = {
-      from: 'sp.tonywoodfloorstairs@gmail.com', // Email người gửi
-      to: 'Hotuan1100@gmail.com', // Email người nhận
+      from: process.env.EMAIL_USER, // Email người gửi
+      to: process.env.TONYWOODFLOORSTAIRS, // Email người nhận
       subject, // Chủ đề email
       text, // Nội dung email
     };
