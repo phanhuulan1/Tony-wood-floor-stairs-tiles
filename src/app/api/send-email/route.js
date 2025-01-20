@@ -21,8 +21,8 @@ export async function POST(request) {
       ciphers: 'SSLv3',
     },
     auth: {
-      user: process.env.EMAIL_USER, // Email của bạn
-      pass: process.env.EMAIL_PASS, // Mật khẩu ứng dụng email
+      user: 'sp.tonywoodfloorstairs@gmail.com', // Email của bạn
+      pass: 'zfts lbyw hvxz ybds', // Mật khẩu ứng dụng email
     },
   });
 
@@ -33,8 +33,8 @@ export async function POST(request) {
   try {
     // Tạo Promise để gửi email
     const mailData = {
-      from: process.env.EMAIL_USER, // Email người gửi
-      to: process.env.TONYWOODFLOORSTAIRS, // Email người nhận
+      from: 'sp.tonywoodfloorstairs@gmail.com', // Email người gửi
+      to: 'Hotuan1100@gmail.com', // Email người nhận
       subject, // Chủ đề email
       text, // Nội dung email
     };
