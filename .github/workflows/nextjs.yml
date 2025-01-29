@@ -79,6 +79,14 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
+      - name: Set environment variables
+        run: echo "Setting environment variables"
+        env:
+          EMAIL_USER: ${{ secrets.EMAIL_USER }}
+          EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
+          TONYWOODFLOORSTAIRS: ${{ secrets.TONYWOODFLOORSTAIRS }}
+          OAUTH_CLIENTID: ${{ secrets.OAUTH_CLIENTID }}
+          OAUTH_CLIENT_SECRET: ${{ secrets.OAUTH_CLIENT_SECRET }}
 
   # Deployment job
   deploy:
