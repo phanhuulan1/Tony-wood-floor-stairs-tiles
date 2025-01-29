@@ -28,9 +28,9 @@ jobs:
   # Build job
   build:
     runs-on: ubuntu-latest
-  steps:
-    - name: Checkout
-      uses: actions/checkout@v4
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
       - name: Detect package manager
         id: detect-package-manager
         run: |
@@ -79,13 +79,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
-      env:
-          EMAIL_USER: ${{ secrets.EMAIL_USER }}
-          EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
-          TONYWOODFLOORSTAIRS: ${{ secrets.TONYWOODFLOORSTAIRS }}
-          OAUTH_CLIENTID: ${{ secrets.OAUTH_CLIENTID }}
-          OAUTH_CLIENT_SECRET: ${{ secrets.OAUTH_CLIENT_SECRET }}
-  # Deployment job
+
   # Deployment job
   deploy:
     environment:
